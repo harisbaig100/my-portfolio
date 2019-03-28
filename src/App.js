@@ -10,11 +10,21 @@ import Services from './styledComponents/services';
 import ClientReview from './styledComponents/clientReview';
 import Footer from './styledComponents/footer';
 import ContactMe from './styledComponents/contactMe';
+import Preloader from './assets/preloader';
+
+
 
 class App extends Component {
+  componentDidMount() {
+
+  }
   render() {
     return (
       <div className="App">
+      
+      {/* <Preloader /> */}
+
+      
 
       <NavBar />
       <Slider />
@@ -26,6 +36,8 @@ class App extends Component {
       <ClientReview />
       <ContactMe />
       <Footer />
+
+      
     
       </div>
     );
